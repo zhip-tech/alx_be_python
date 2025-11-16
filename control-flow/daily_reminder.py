@@ -13,8 +13,6 @@ match priority:
         reminder = f"'{task}' is a task with unspecified priority"
 
 if time_bound == "yes":
-    reminder += " that requires immediate attention today!"
+    print("Reminder: " + reminder + " that requires immediate attention today!")
 else:
-    reminder = f"Note: {reminder}. Consider completing it when you have free time."
-
-print("\nReminder:", reminder)
+    print("Reminder: Note: " + reminder + ". Consider completing it when you have free time.")
